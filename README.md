@@ -8,7 +8,12 @@ The dataset used in for the paper are available at https://gluebenchmark.com/ an
 
 ## Generate scrambled texts
 
-Hyperparameters can be found at ./corpus-gen/para.py
+Hyperparameters can be found and should be defined in:
+
+```
+./corpus-gen/para.py
+
+```
 
 The code below will generate scrambled texts for each dataset in GLUE and SuperGLUE.
 
@@ -18,6 +23,13 @@ python ./corpus-gen/main.py
 ```
 
 ## Train the re-ordering model
+
+Hyperparameters can be found and should be defined in:
+
+```
+./probe/para.py
+
+```
 
 The re-ordering model takes in scrambled texts and output the orginal texts. The model structure is T5.
 
